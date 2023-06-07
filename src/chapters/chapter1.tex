@@ -12,15 +12,15 @@
 % ----------------------- General framework of the internship ----------------------- %
 \section{General framework of the internship}
 % \lipsum[2]
-This project was conducted as part of the requirements for obtaining a bachelor’s degree in Computer Science at the Higher Institute of Technological Studies of Nabeul (ISETN). The project was executed at the Information Promotion Agency (IPA) over a period of three months, starting from the 26th of February 2023 to the 31st of May 2023. The primary objective of the project was to simplify and enhance the usability of the i Competency Dictionary (iCD) toolset, a comprehensive framework for understanding and developing IT skills. The project involved the development of a user-friendly web or mobile application, the translation of complex iCD data into a more accessible format, and the automation of relevant skills and tasks fetching process. The project aimed to adhere to modern software development principles and improve the scalability of the iCD toolset for effective IT recruitment and skill development.
+This project was conducted as part of the requirements for obtaining a bachelor’s degree in Computer Science at the Higher Institute of Technological Studies of Nabeul (ISETN). The project was executed at the \glsxtrfull{ipa} over a period of three months, starting from the 26th of February 2023 to the 31st of May 2023. The primary objective of the project was to simplify and enhance the usability of the \glsxtrfull{icd} toolset, a comprehensive framework for understanding and developing IT skills. The project involved the development of a user-friendly web or mobile application, the translation of complex \glsxtrshort{icd} data into a more accessible format, and the automation of relevant skills and tasks fetching process. The project aimed to adhere to modern software development principles and improve the scalability of the \glsxtrshort{icd} toolset for effective IT recruitment and skill development.
 
 
 % ----------------------- Company overview ----------------------- %
 \section{Introduction to the Hosting Organization}
 This section introduces the host company {\bf Information Promotion Agency} as well as the services it offers.
 
-\subsection{About IPA}
-The Information-technology Promotion Agency (IPA) is a government-affiliated organization in Japan. It is dedicated to advancing the development and widespread adoption of information and communication technologies (ICT) across various sectors, including businesses, government agencies, and individuals.
+\subsection{About \glsxtrshort{ipa} \cite{about-ipa}}
+The \glsxtrfull{ipa} is a government-affiliated organization in Japan. It is dedicated to advancing the development and widespread adoption of information and communication technologies (ICT) across various sectors, including businesses, government agencies, and individuals.
 \begin{figure}[H]
     \centering
     \makebox[\textwidth]{\includegraphics[width=12cm]{src/assets/logos/IPA_LOGO.png}}
@@ -28,15 +28,15 @@ The Information-technology Promotion Agency (IPA) is a government-affiliated org
     \label{fig:logo-of-IPA}
 \end{figure}
 
-\subsection{IPA's services}
+\subsection{\glsxtrshort{ipa}'s services}
 \subsubsection*{\underline{Information Security Enhancement}}
-One of the primary services of IPA is enhancing information security. They provide guidance and support to various sectors to help them adopt and leverage ICT effectively. This includes assisting the Japanese government in the formulation and implementation of ICT policies and strategies, fostering innovation in the ICT industry, and enhancing cybersecurity measures.
+One of the primary services of \glsxtrshort{ipa} is enhancing information security. They provide guidance and support to various sectors to help them adopt and leverage ICT effectively. This includes assisting the Japanese government in the formulation and implementation of ICT policies and strategies, fostering innovation in the ICT industry, and enhancing cybersecurity measures.
 
 \subsubsection*{\underline{Professional Development and Talent Nurturing}}
-IPA is involved in conducting national IT examinations and other initiatives aimed at developing skilled ICT professionals. They are committed to nurturing talents and professionals for the digital age, which is crucial for the advancement of the ICT sector in Japan.
+\glsxtrshort{ipa} is involved in conducting national IT examinations and other initiatives aimed at developing skilled ICT professionals. They are committed to nurturing talents and professionals for the digital age, which is crucial for the advancement of the ICT sector in Japan.
 
 \subsubsection*{\underline{Digital Transformation Enablement}}
-IPA plays a significant role in enabling digital transformations in industries and society. They drive various IT initiatives to create a super-smart society, which involves fostering innovation in the ICT industry, developing new technologies, and promoting their adoption across various sectors.
+\glsxtrshort{ipa} plays a significant role in enabling digital transformations in industries and society. They drive various IT initiatives to create a super-smart society, which involves fostering innovation in the ICT industry, developing new technologies, and promoting their adoption across various sectors.
 
 % \begin{figure}[H]
 %     \centering
@@ -47,11 +47,11 @@ IPA plays a significant role in enabling digital transformations in industries a
 
 % ----------------------- Stating the problem ----------------------- %
 \section{Project Context}
-The i Competency Dictionary (iCD) project is an initiative launched by IPA to improve IT human resource development and skills enhancement in Japan. The iCD is a comprehensive database of tasks and skills related to the field of IT engineering, designed to help both companies/organizations and individuals enhance their ability to execute tasks and reach their goals by improving their skills. The iCD comprises two main components: the Task Dictionary and the Skill Dictionary. The Task Dictionary defines internal tasks performed by IT engineers, while the Skill Dictionary defines the skills required to execute those tasks.
+The \glsxtrfull{icd} project is an initiative launched by \glsxtrshort{ipa} to improve IT human resource development and skills enhancement in Japan. The \glsxtrshort{icd} is a comprehensive database of tasks and skills related to the field of IT engineering, designed to help both companies/organizations and individuals enhance their ability to execute tasks and reach their goals by improving their skills. The \glsxtrshort{icd} comprises two main components: the Task Dictionary and the Skill Dictionary. The Task Dictionary defines internal tasks performed by IT engineers, while the Skill Dictionary defines the skills required to execute those tasks.
 
 \newpage
-\subsection{iCD Structure}
-The iCD is composed of two main components: the Task Dictionary and the Skill Dictionary. The Task Dictionary provides a comprehensive list of tasks in IT business, organized into four layers, including three task layers and an Assessment Items layer. The Skill Dictionary, on the other hand, offers a detailed list of IT skills required to perform those tasks, divided into four layers, including three skill layers and a BOK (Body of Knowledge) layer.
+\subsection{\glsxtrshort{icd} Structure}
+The \glsxtrshort{icd} is composed of two main components: the Task Dictionary and the Skill Dictionary. The Task Dictionary provides a comprehensive list of tasks in IT business, organized into four layers, including three task layers and an Assessment Items layer. The Skill Dictionary, on the other hand, offers a detailed list of IT skills required to perform those tasks, divided into four layers, including three skill layers and a \glsxtrfull{bok} layer.
 
 \begin{figure}[H]
     \centering
@@ -60,8 +60,8 @@ The iCD is composed of two main components: the Task Dictionary and the Skill Di
     \label{fig:task_dictionaries_Relationship}
 \end{figure}
 
-\subsection{iCD Contents}
-The iCD is comprised of several components, including:
+\subsection{\glsxtrshort{icd} Contents}
+The \glsxtrshort{icd} is comprised of several components, including:
 
 \begin{enumerate}
     \item Task List
@@ -72,7 +72,7 @@ The iCD is comprised of several components, including:
     \item Skill Dictionary Chart
     \item Job List
     \item Job X Skill Corresponding table
-    \item ITEE X Skill Corresponding table
+    \item \glsxtrshort{itee} X Skill Corresponding table
     \item Task X Skill corresponding table (Second layer)
     \item Task X Skill corresponding table (Third layer)
 \end{enumerate}
@@ -80,14 +80,14 @@ The iCD is comprised of several components, including:
 \begin{figure}[H]
     \centering
     \makebox[\textwidth]{\includegraphics[width=\linewidth]{src/assets/images/iCDERDiagram.jpg}}
-    \caption{ i Competency Dictionary (iCD) ER Diagram }
+    \caption{ \glsxtrfull{icd} ER Diagram }
     \label{fig:iCD_ER_Diagram}
 \end{figure}
 
 \begin{itemize}
     \renewcommand\labelitemi{-}
     \item These components offer a complete IT competency framework, aiding organizations in evaluating and enhancing their IT service industry, IT user organizations, and embedded software development employees' competencies.
-    \item In conclusion, the i Competency Dictionary (iCD) project seeks to advance IT human resource development and skills enhancement in Japan by providing a comprehensive IT engineering tasks and skills database. Understanding the iCD's structure, objectives, applications, benefits, implementation status, supplementary contents, and update process provides valuable insights into its significance for IT human resource development and skills enhancement in Japan and globally.
+    \item In conclusion, the \glsxtrfull{icd} project seeks to advance IT human resource development and skills enhancement in Japan by providing a comprehensive IT engineering tasks and skills database. Understanding the \glsxtrshort{icd}'s structure, objectives, applications, benefits, implementation status, supplementary contents, and update process provides valuable insights into its significance for IT human resource development and skills enhancement in Japan and globally.
 \end{itemize}
 
 \newpage
@@ -176,26 +176,26 @@ Using the examples of knowledge items and main Bodies of Knowledge in the Skill 
 Information Technology Engineers Examination as a reference base, the Skill Dictionary summarizes and
 catalogs skills and knowledge items essential to the execution of IT-related tasks.
 
-\subsection{Objectives of the iCD}
-The primary objectives of the iCD are:
+\subsection{Objectives of the \glsxtrshort{icd}}
+The primary objectives of the \glsxtrshort{icd} are:
 
 \begin{itemize}
-    \item To consolidate IT skills standards (ITSS, UISS, ETSS) to create a comprehensive, unified framework
-    \item To regularly update the iCD based on user feedback, global IT trends, ITEE alignment, and other global standards and BOKs available in Japanese
+    \item To consolidate IT skills standards (\glsxtrshort{itss}, \glsxtrshort{uiss}, \glsxtrshort{etss}) to create a comprehensive, unified framework
+    \item To regularly update the \glsxtrshort{icd} based on user feedback, global IT trends, \glsxtrshort{itee} alignment, and other global standards and \glsxtrshort{bok}s available in Japanese
     \item To provide organizations with a tool to assess and develop the competencies of their employees in the IT service industry, IT user organizations, and embedded software development
 \end{itemize}
 
 
-\subsection{Applications of the iCD}
-The iCD can be utilized by various stakeholders in different ways, such as:
+\subsection{Applications of the \glsxtrshort{icd}}
+The \glsxtrshort{icd} can be utilized by various stakeholders in different ways, such as:
 
 \begin{itemize}
-    \item Companies using the iCD for workforce planning, skill gap analysis, and training program development
+    \item Companies using the \glsxtrshort{icd} for workforce planning, skill gap analysis, and training program development
     \item Educational institutions, like university IT departments and IT engineering schools, using the Skill Dictionary to establish syllabi or curricula
-    \item IT professionals leveraging the iCD to identify career paths and skill requirements for their desired roles
+    \item IT professionals leveraging the \glsxtrshort{icd} to identify career paths and skill requirements for their desired roles
 \end{itemize}
 
-While the iCD toolset serves a broad range of stakeholders, for the purpose of this project, we primarily focus on its application within companies for workforce planning, skill gap analysis, and training program development. This focus is driven by the project's time constraints and our supervisor's instructions. By concentrating on this specific application, we aim to deliver a solution that effectively addresses the needs of HR managers and recruiters in IT companies. This focus also allows us to delve deeper into the complexities and nuances of this application, thereby ensuring a more thorough and detailed solution. Future iterations of the project may expand to cover other applications of the iCD toolset.
+While the \glsxtrshort{icd} toolset serves a broad range of stakeholders, for the purpose of this project, we primarily focus on its application within companies for workforce planning, skill gap analysis, and training program development. This focus is driven by the project's time constraints and our supervisor's instructions. By concentrating on this specific application, we aim to deliver a solution that effectively addresses the needs of HR managers and recruiters in IT companies. This focus also allows us to delve deeper into the complexities and nuances of this application, thereby ensuring a more thorough and detailed solution. Future iterations of the project may expand to cover other applications of the \glsxtrshort{icd} toolset.
 
 \begin{figure}[H]
     \centering
@@ -204,8 +204,8 @@ While the iCD toolset serves a broad range of stakeholders, for the purpose of t
     \label{fig:iCD_Forms_Of_Use}
 \end{figure}
 
-\subsection{Benefits of the iCDe}
-Some of the key benefits of implementing the iCD are:
+\subsection{Benefits of the \glsxtrshort{icd}}
+Some of the key benefits of implementing the \glsxtrshort{icd} are:
 \begin{itemize}
     \item Enhanced workforce adaptability and productivity
     \item More effective and targeted training programs
@@ -214,22 +214,22 @@ Some of the key benefits of implementing the iCD are:
 \end{itemize}
 
 
-\subsection{iCD Implementation Status}
-The iCD has seen widespread adoption, with approximately 1,000 organizations obtaining user company certification as of September 2017. Notably, HITACHI Ltd uses the iCD for level checks for around 20,000 employees. In addition to its applications in industry, the iCD has also been implemented in academia, such as university IT departments and IT engineering schools. The iCD's popularity has grown globally since the release of the English version in 2015, with 24 countries adopting it, including regions in Europe, the Middle East, Asia, and North/South America.
+\subsection{\glsxtrshort{icd} Implementation Status}
+The \glsxtrshort{icd} has seen widespread adoption, with approximately 1,000 organizations obtaining user company certification as of September 2017. Notably, HITACHI Ltd uses the \glsxtrshort{icd} for level checks for around 20,000 employees. In addition to its applications in industry, the \glsxtrshort{icd} has also been implemented in academia, such as university IT departments and IT engineering schools. The \glsxtrshort{icd}'s popularity has grown globally since the release of the English version in 2015, with 24 countries adopting it, including regions in Europe, the Middle East, Asia, and North/South America.
 
-\subsection{iCD Supplement}
-- The Supplementary contents of the iCD Task Dictionary include specific, urgent, or special task requests from Japanese companies. These contents are not linked to skills and are not included in the English translation of the iCD for overseas use. The Supplementary contents cover tasks related to Marketing, General Affairs/Personnel Affairs/Accounting, Education, Call Centers, and IoT System Service Lifecycle.
+\subsection{\glsxtrshort{icd} Supplement}
+- The Supplementary contents of the \glsxtrshort{icd} Task Dictionary include specific, urgent, or special task requests from Japanese companies. These contents are not linked to skills and are not included in the English translation of the \glsxtrshort{icd} for overseas use. The Supplementary contents cover tasks related to Marketing, General Affairs/Personnel Affairs/Accounting, Education, Call Centers, and IoT System Service Lifecycle.
 
-- By incorporating these sub-elements, you will provide a comprehensive understanding of the iCD's background, structure, objectives, applications, benefits, implementation status, and supplementary contents, which will help readers appreciate the importance of the project in the context of IT human resource development and skills enhancement.
+- By incorporating these sub-elements, you will provide a comprehensive understanding of the \glsxtrshort{icd}'s background, structure, objectives, applications, benefits, implementation status, and supplementary contents, which will help readers appreciate the importance of the project in the context of IT human resource development and skills enhancement.
 
 
-\subsection{iCD Update Process}
+\subsection{\glsxtrshort{icd} Update Process}
 
 \begin{itemize}
-    \item Feedback from users and stakeholders: By incorporating their voices and opinions, the iCD can adapt to changing needs and remain a valuable resource for organizations.
-    \item Global IT trends: The iCD collaborates with various global partners to capture and incorporate the latest IT trends and best practices.
-    \item Consistency with ITEE updates: Ensuring consistency between the iCD and the ITEE is crucial for maintaining the iCD as a reliable reference for IT professionals and organizations preparing for the ITEE.
-    \item Updates of other global standards and BOKs available in Japanese: The iCD updates are aligned with other global standards and BOKs to ensure consistency and provide a comprehensive understanding of the IT competencies required in the current business environment.
+    \item Feedback from users and stakeholders: By incorporating their voices and opinions, the \glsxtrshort{icd} can adapt to changing needs and remain a valuable resource for organizations.
+    \item Global IT trends: The \glsxtrshort{icd} collaborates with various global partners to capture and incorporate the latest IT trends and best practices.
+    \item Consistency with \glsxtrshort{itee} updates: Ensuring consistency between the \glsxtrshort{icd} and the \glsxtrshort{itee} is crucial for maintaining the \glsxtrshort{icd} as a reliable reference for IT professionals and organizations preparing for the \glsxtrshort{itee}.
+    \item Updates of other global standards and \glsxtrshort{bok}s available in Japanese: The \glsxtrshort{icd} updates are aligned with other global standards and \glsxtrshort{bok}s to ensure consistency and provide a comprehensive understanding of the IT competencies required in the current business environment.
 \end{itemize}
 
 
@@ -237,31 +237,31 @@ The iCD has seen widespread adoption, with approximately 1,000 organizations obt
 % ----------------------- Assessment of the case ----------------------- %
 \newpage
 \section{Problems and Motivations}
-In this section, we delve into the core issues that motivated the inception of this project and the proposed solution to address these challenges. The complexities of the IT landscape and the difficulties faced by organizations and individuals in identifying and developing necessary IT competencies form the crux of the problem. The iCD toolset, despite its comprehensive nature, presents its own set of challenges that hinder its effective utilization. Our proposed solution aims to tackle these issues head-on, by simplifying the iCD toolset and making it more accessible and user-friendly through an integrated web application. The following subsections provide a detailed description of the problem and the proposed solution.
+In this section, we delve into the core issues that motivated the inception of this project and the proposed solution to address these challenges. The complexities of the IT landscape and the difficulties faced by organizations and individuals in identifying and developing necessary IT competencies form the crux of the problem. The \glsxtrshort{icd} toolset, despite its comprehensive nature, presents its own set of challenges that hinder its effective utilization. Our proposed solution aims to tackle these issues head-on, by simplifying the \glsxtrshort{icd} toolset and making it more accessible and user-friendly through an integrated web application. The following subsections provide a detailed description of the problem and the proposed solution.
 
 \subsection{Problem Description}
 \begin{itemize}
     \renewcommand\labelitemi{-}
     \item The rapid evolution of the IT landscape has led to a growing demand for skilled IT professionals with the ability to adapt to new technologies and challenges. However, it can be difficult for both organizations and individuals to identify the specific competencies required to excel in the field. Traditional methods for assessing IT skills may be insufficient or outdated, and there may be a lack of comprehensive resources to help organizations and individuals enhance their IT capabilities.
           
-    \item Additionally, the existing iCD toolset, while comprehensive, may be challenging to navigate and understand for some users. The accessibility and user-friendliness of the toolset can be improved to encourage wider adoption and facilitate more effective usage of the iCD resources.
+    \item Additionally, the existing \glsxtrshort{icd} toolset, while comprehensive, may be challenging to navigate and understand for some users. The accessibility and user-friendliness of the toolset can be improved to encourage wider adoption and facilitate more effective usage of the \glsxtrshort{icd} resources.
 \end{itemize}
 
 
 
 \subsection{Proposed Solution}
-To address the issues outlined above, our project aims to develop a simplified and integrated web application that streamlines the use of the iCD toolset. This web application will provide an intuitive and user-friendly interface, making it easier for users to access and understand the iCD contents. Key features of the proposed solution include:
+To address the issues outlined above, our project aims to develop a simplified and integrated web application that streamlines the use of the \glsxtrshort{icd} toolset. This web application will provide an intuitive and user-friendly interface, making it easier for users to access and understand the \glsxtrshort{icd} contents. Key features of the proposed solution include:
 
 \begin{itemize}
 
-    \item Simplification of the iCD toolset: By breaking down the complex structure of the iCD into more manageable components, users can easily navigate through the contents and find the relevant information they need.
-    \item Integration of the iCD components: By combining the Task and Skill dictionaries into a single, cohesive platform, users can efficiently identify the tasks and skills related to their specific IT roles and requirements.
-    \item User-friendly interface: The web application will be designed with usability in mind, ensuring that users can quickly and easily access the iCD resources.
-    \item Enhanced search functionality: Users will be able to search and filter the iCD contents based on specific criteria, such as job roles, tasks, or skills, making it easier to find relevant information.
+    \item Simplification of the \glsxtrshort{icd} toolset: By breaking down the complex structure of the \glsxtrshort{icd} into more manageable components, users can easily navigate through the contents and find the relevant information they need.
+    \item Integration of the \glsxtrshort{icd} components: By combining the Task and Skill dictionaries into a single, cohesive platform, users can efficiently identify the tasks and skills related to their specific IT roles and requirements.
+    \item User-friendly interface: The web application will be designed with usability in mind, ensuring that users can quickly and easily access the \glsxtrshort{icd} resources.
+    \item Enhanced search functionality: Users will be able to search and filter the \glsxtrshort{icd} contents based on specific criteria, such as job roles, tasks, or skills, making it easier to find relevant information.
     \item Customizable user experience: The web application will allow users to create personalized profiles, enabling them to save and track their progress as they develop their IT competencies.
           
 \end{itemize}
-By implementing these features, the proposed web application will provide a more accessible and efficient way for organizations and individuals to utilize the iCD toolset, ultimately promoting the development of IT competencies and enhancing the IT human resource landscape in Japan and globally.
+By implementing these features, the proposed web application will provide a more accessible and efficient way for organizations and individuals to utilize the \glsxtrshort{icd} toolset, ultimately promoting the development of IT competencies and enhancing the IT human resource landscape in Japan and globally.
 
 
 
@@ -311,7 +311,7 @@ This development process breaks down the tasks into a set of subtasks, processed
 \begin{figure}[H]
     \centering
     \makebox[\textwidth]{\includegraphics[width=\linewidth]{src/assets/images/ScrumMethodology.png}}
-    \caption{ The Agile SCRUM Framework }
+    \caption{ The Agile SCRUM Framework \cite{agile-scrum-lean}}
     \label{fig:Scrum_Methodology_Diagram}
 \end{figure}
 

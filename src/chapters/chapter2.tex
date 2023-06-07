@@ -10,7 +10,7 @@
 The Requirement Specifications provide a comprehensive outline of what the software must do and how it should perform. They are categorized into functional and non-functional requirements. These requirements are informed by the needs of the actors or users of the software, and the desired capabilities of the system.
 
 \subsection{Identification of the Actors}
-The iCD toolset web application will cater to a broad range of actors, each with their own specific needs and expectations. These actors can be grouped into three main categories: Companies/Organizations, Individuals, and Educational Institutions.
+The \glsxtrshort{icd} toolset web application will cater to a broad range of actors, each with their own specific needs and expectations. These actors can be grouped into three main categories: Companies/Organizations, Individuals, and Educational Institutions.
 
 \begin{itemize}
     \renewcommand\labelitemi{-}
@@ -180,7 +180,7 @@ Non-functional requirements define the system's properties or characteristics, s
     \item Performance: The system should be highly responsive and capable of handling multiple simultaneous users without any degradation in performance. It should also be scalable to accommodate an increasing number of users and data over time.
     \item Compatibility: The system should be compatible with various devices, platforms, and browsers to maximize accessibility. It should adhere to responsive design principles for optimal display on different screen sizes and resolutions.
     \item Maintainability: The system should be designed in a modular manner, allowing for easy updates, modifications, and debugging. It should also provide tools for tracking and resolving any issues that may arise.
-    \item Interoperability: The system should seamlessly integrate with the iCD toolset and the Airtable database. It should also provide APIs or other means for possible future integrations with other systems.
+    \item Interoperability: The system should seamlessly integrate with the \glsxtrshort{icd} toolset and the Airtable database. It should also provide APIs or other means for possible future integrations with other systems.
 \end{enumerate}
 
 
@@ -359,7 +359,7 @@ In the context of this project and given the timeline constraints, we specifical
 
 \newpage
 \subsection{interface mockups}
-In this section, we will present the interface mockups for our project. These mockups provide a visual representation of the user interface (UI) that we have designed for our application. They serve as a blueprint for the layout and functionality of the application, illustrating how users, particularly HR managers, will interact with the system. The interface mockups were created with a focus on user-friendliness and intuitive navigation, ensuring that HR managers can easily utilize the IT Competency Dictionary (iCD) toolset through our application. From account creation and management to job description definition and advanced features, these mockups encapsulate the entire user journey within our application.
+In this section, we will present the interface mockups for our project. These mockups provide a visual representation of the user interface (UI) that we have designed for our application. They serve as a blueprint for the layout and functionality of the application, illustrating how users, particularly HR managers, will interact with the system. The interface mockups were created with a focus on user-friendliness and intuitive navigation, ensuring that HR managers can easily utilize the \glsxtrfull{icd} toolset through our application. From account creation and management to job description definition and advanced features, these mockups encapsulate the entire user journey within our application.
 
 \begin{figure}[H]
     \centering
@@ -469,7 +469,7 @@ The application interacts with several APIs for data handling and advanced funct
 \begin{itemize}
     \renewcommand\labelitemi{-}
     \item Render APIs: These are used to interact with the back-end services hosted on the Render cloud application hosting platform.
-    \item Algolia APIs: These are used to create an index of all skill items in the iCD toolset and provide search capabilities in the application.
+    \item Algolia APIs: These are used to create an index of all skill items in the \glsxtrshort{icd} toolset and provide search capabilities in the application.
     \item GPT-3.5 Turbo API: This API from OpenAI is used to generate job descriptions based on the selected skills and tasks.
 \end{itemize}
 
@@ -503,7 +503,7 @@ The back-end of the application was developed using {\color{purple}JavaScript} w
     \label{fig: JS_Logo}
 \end{figure}
 
-Express.js is a fast, unopinionated, and minimalist web framework for Node.js. It's designed for building web applications and APIs. In this project, Express.js was used to structure the data from the iCD toolset and handle API routes, ensuring efficient and reliable data management.
+Express.js is a fast, unopinionated, and minimalist web framework for Node.js. It's designed for building web applications and APIs. In this project, Express.js was used to structure the data from the \glsxtrshort{icd} toolset and handle API routes, ensuring efficient and reliable data management.
 
 \begin{figure}[H]
     \centering
@@ -544,7 +544,7 @@ We used {\color{purple}Render}, a unified platform to build and run all applicat
 
 
 \newpage
-{\color{purple}Algolia} was used to enhance the application's search capabilities. Algolia is a powerful and flexible search and discovery API that delivers real-time results from the first keystroke. Its powerful features enabled the application to handle the extensive data from the iCD toolset and provide a user-friendly experience.
+{\color{purple}Algolia} was used to enhance the application's search capabilities. Algolia is a powerful and flexible search and discovery API that delivers real-time results from the first keystroke. Its powerful features enabled the application to handle the extensive data from the \glsxtrshort{icd} toolset and provide a user-friendly experience.
 
 \begin{figure}[H]
     \centering
@@ -554,7 +554,7 @@ We used {\color{purple}Render}, a unified platform to build and run all applicat
 \end{figure}
 
 
-For the automated generation of job descriptions and for the interactive chatbot feature, the team utilized the {\color{purple}GPT-3.5 Turbo API} from OpenAI. The GPT API provides a general-purpose "text in, text out" interface, making it easy to apply the capabilities of the models to a wide range of tasks. The use of system context related to the iCD toolset ensured that the chatbot provided related and helpful information to the users.
+For the automated generation of job descriptions and for the interactive chatbot feature, the team utilized the {\color{purple}GPT-3.5 Turbo API} from OpenAI. The GPT API provides a general-purpose "text in, text out" interface, making it easy to apply the capabilities of the models to a wide range of tasks. The use of system context related to the \glsxtrshort{icd} toolset ensured that the chatbot provided related and helpful information to the users.
 
 \begin{figure}[H]
     \centering
@@ -563,7 +563,7 @@ For the automated generation of job descriptions and for the interactive chatbot
     \label{fig: OpenAI_Logo}
 \end{figure}
 
-With these technologies combined, We were able to build an efficient and user-friendly application that simplifies the use of the iCD toolset.
+With these technologies combined, We were able to build an efficient and user-friendly application that simplifies the use of the \glsxtrshort{icd} toolset.
 
 
 \section{Proposed architecture}
@@ -575,19 +575,19 @@ With these technologies combined, We were able to build an efficient and user-fr
 
 % In addition to these features, the application includes a chatbot that uses the GPT-API to provide context-specific information about the iCD toolset to the users.
 
-Our web application simplifies the iCD toolset, originally in Excel files and graphs, by making the data user-friendly. The MVP focuses on Human Resource Managers, enabling them to define job descriptions. Users can select jobs from dropdown menus, view required skills, and use the Algolia search engine for skill filtering. The application shows tasks related to selected skills and generates job descriptions via the GPT-3.5 Turbo model from OpenAI. Generated descriptions are stored in a Firestore database for updating or deletion. A GPT-API-powered chatbot is included for context-specific iCD toolset information.
+Our web application simplifies the \glsxtrshort{icd} toolset, originally in Excel files and graphs, by making the data user-friendly. The MVP focuses on Human Resource Managers, enabling them to define job descriptions. Users can select jobs from dropdown menus, view required skills, and use the Algolia search engine for skill filtering. The application shows tasks related to selected skills and generates job descriptions via the GPT-3.5 Turbo model from OpenAI. Generated descriptions are stored in a Firestore database for updating or deletion. A GPT-API-powered chatbot is included for context-specific \glsxtrshort{icd} toolset information.
 
 
 \subsection{General Architecture}
 
-The application's architecture is designed with a focus on simplifying the interaction between the user and the iCD toolset data. It consists of several key components:
+The application's architecture is designed with a focus on simplifying the interaction between the user and the \glsxtrshort{icd} toolset data. It consists of several key components:
 
 \begin{itemize}
     \item Front-End: Built with FlutterFlow, our front-end enables HR managers to select jobs, view, filter, and search skills, choose related tasks, and generate job descriptions.
-    \item Back-End: Leveraging JavaScript and Express.js, our back-end structures the raw iCD data and exposes it via APIs hosted on Render.
-    \item Database: The application uses two databases: Airtable and Firestore. The iCD toolset data is imported and filtered into an Airtable database, while Firestore is used to store user information and generated job descriptions.
+    \item Back-End: Leveraging JavaScript and Express.js, our back-end structures the raw \glsxtrshort{icd} data and exposes it via APIs hosted on Render.
+    \item Database: The application uses two databases: Airtable and Firestore. The \glsxtrshort{icd} toolset data is imported and filtered into an Airtable database, while Firestore is used to store user information and generated job descriptions.
     \item Third-Party Services: The application uses several third-party services. Algolia is used to create an index of all skill items and task items and provide search capabilities. The GPT-3.5 Turbo model from OpenAI is used to generate job descriptions. Firebase is used for user authentication and data storage.
-    \item Chatbot: A chatbot is included in the application to provide users with context-specific information about the iCD toolset. The chatbot also uses the GPT-API from OpenAI and is designed to provide suggestions that are updated based on the user's interactions with the application.
+    \item Chatbot: A chatbot is included in the application to provide users with context-specific information about the \glsxtrshort{icd} toolset. The chatbot also uses the GPT-API from OpenAI and is designed to provide suggestions that are updated based on the user's interactions with the application.
 \end{itemize}
 
 
@@ -607,12 +607,12 @@ The application's architecture is designed with a focus on simplifying the inter
 % The primary aim of the project was to design and implement a system that enables {\color{newBlue}\textbf{HR}} managers to effectively define job roles and responsibilities using the IT Competency Dictionary (iCD). 
 % The iCD, a comprehensive toolset developed in Japan, consists of a {\color{darkPurple}\textbf{Task Dictionary}} outlining specific IT business tasks and a {\color{darkgreen}\textbf{Skill Dictionary}} detailing the necessary IT skills required to perform these tasks. 
 % This toolset, originally provided in Excel format, contains essential elements from three previous skill standards in Japan, making it a comprehensive resource for defining IT job roles and responsibilities.
-The project's primary goal was to create a system that allows {\color{newBlue}\textbf{HR}} managers to effectively define job roles using the IT Competency Dictionary (iCD). The iCD, a comprehensive toolset from Japan, includes a {\color{darkPurple}\textbf{Task Dictionary}} and a {\color{darkgreen}\textbf{Skill Dictionary}}. Originally in Excel format, the iCD integrates elements from three previous Japanese skill standards, making it a valuable resource for defining IT roles.
+The project's primary goal was to create a system that allows {\color{newBlue}\textbf{HR}} managers to effectively define job roles using the \glsxtrfull{icd}. The \glsxtrshort{icd}, a comprehensive toolset from Japan, includes a {\color{darkPurple}\textbf{Task Dictionary}} and a {\color{darkgreen}\textbf{Skill Dictionary}}. Originally in Excel format, the \glsxtrshort{icd} integrates elements from three previous Japanese skill standards, making it a valuable resource for defining IT roles.
 
 
 \begin{itemize}
     \item Task 1: \\
-          Import the raw ICD toolset data into the Airtable database with necessary modifications.
+          Import the raw \glsxtrshort{icd} toolset data into the Airtable database with necessary modifications.
     \item Task 2: \\
           Create and deploy a web server that fetches and structures the data from the Airtable database.
     \item Task 3: \\
@@ -624,8 +624,8 @@ The project's primary goal was to create a system that allows {\color{newBlue}\t
 
 \subsection{Data Setup}
 
-To effectively utilize the iCD toolset, the first step was to import the raw data into {\color{limeGreen}\textbf{Airtable}}, a cloud-based database management system. 
-This required converting the Excel-based iCD toolset into a format compatible with Airtable. 
+To effectively utilize the \glsxtrshort{icd} toolset, the first step was to import the raw data into {\color{limeGreen}\textbf{Airtable}}, a cloud-based database management system. 
+This required converting the Excel-based \glsxtrshort{icd} toolset into a format compatible with Airtable. 
 During this process, the data was also meticulously cleaned and reorganized to suit the project's specific requirements. \\
 $ \rightarrow $ \quad For instance, duplicate entries were removed, errors in the data were corrected, and data fields were restructured to optimize retrieval and analysis in later stages of the project.
 
@@ -644,7 +644,7 @@ A vital part of this integration was to ensure the structured data provided by t
 
 \subsection{Data Manipulation}
 
-With the data pipeline fully established, attention was turned to developing features within the application that allowed users to interact with the iCD data. 
+With the data pipeline fully established, attention was turned to developing features within the application that allowed users to interact with the \glsxtrshort{icd} data. 
 This encompassed creating {\color{limeGreen}\textbf{functions}} to display data effectively within the application, and designing actions that let users manipulate the data, such as sorting or filtering functions. 
 Each of these functions was thoroughly tested to ensure they worked as expected, allowing users to navigate and manipulate the data effectively according to their specific use case.
 
@@ -657,10 +657,10 @@ Each of these functions was thoroughly tested to ensure they worked as expected,
 \end{figure}
 
 
-\subsection{ICD Project Management Canva and Mindmap}
+\subsection{\glsxtrshort{icd} Project Management Canva and Mindmap}
 
 During the setup process, a {\color{limeGreen}\textbf{project management Canva}} and a {\color{limeGreen}\textbf{Mindmap}} were created. These visual tools were instrumental in gaining a deep  
-understanding of the complex structure of the iCD toolset and its nested structure. 
+understanding of the complex structure of the \glsxtrshort{icd} toolset and its nested structure. 
 They served as useful references during the data import and manipulation phase, as well as throughout the development of the front-end application.
 
 % \subsection*{Project Management Canva}
