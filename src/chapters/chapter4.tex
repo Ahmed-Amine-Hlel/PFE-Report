@@ -108,9 +108,9 @@ In this use case, the HR Manager interacts with the system to select a job categ
         \hline
         \textbf{Postconditions} & The Job Category and Specialized Field (if applicable) have been selected for the new Job Description. The system is ready to move to the next step of the job description creation process (filtering and selecting skills). \\
         \hline
-        \textbf{Alternative Scenarios} & 1. If the job category doesn't have specialized fields, the HR Manager can directly proceed to the next step of the job description creation process after selecting the job category. No fifth dropdown is shown in this case. \\
-        & 2. If the HR Manager decides to change the origin, personnel category, personnel type, or job category at any point, they can do so. The system will dynamically update the subsequent dropdowns based on the new selection. \\
-        & 3. If the HR Manager decides to cancel the process, they can leave the page at any time. All changes made will not be saved, and they can restart the process in a new session. \\
+        \textbf{Alternative Scenarios} & 1. If no specialized fields exist for a job category, the HR Manager can proceed to the next step directly after selection.\\
+        & 2. The HR Manager can change the origin, personnel category, personnel type, or job category anytime, with the system updating the dropdowns dynamically. \\
+        & 3. The HR Manager can cancel the process anytime, with changes not being saved for future sessions. \\
         \hline
     \end{tabularx}
     \normalsize
@@ -121,7 +121,7 @@ After the HR Manager has selected a job category (and a specialized field, if ap
 
 \vspace{1cm}
 
-\begin{xltabular}{1.2\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=1.5\hsize}X|}
+\begin{xltabular}{1.2\textwidth}{|>{\hsize=0.4\hsize}X|>{\hsize=1.6\hsize}X|}
     \caption{Use Case 2: Filter and Select Skills for Chosen Job Category} \\
     \hline
     \textbf{Title} & Filter and Select Skills for Chosen Job Category \\
@@ -141,9 +141,9 @@ After the HR Manager has selected a job category (and a specialized field, if ap
     \hline
     \textbf{Postconditions} & The selected skills for the job description have been saved by the system. HR Manager is ready to proceed to the next step of selecting tasks related to the chosen skills. \\
     \hline
-    \textbf{Alternative Scenarios} & 1. If the HR Manager cannot find a specific skill using the search functionality, they can scroll through the full list to locate and select it. \\
-    & 2. If the HR Manager decides to go back and change the job category or specialized field, the system discards the currently selected skills and refreshes the list based on the new job category or specialized field. \\
-    & 3. If the HR Manager decides to cancel the process, they can leave the page at any point. The currently selected skills will not be saved, and they can restart the process in a new session. \\
+    \textbf{Alternative Scenarios} & 1. If a specific skill isn't found via search, the HR Manager can manually scroll through the list to select it. \\
+    & 2. If the HR Manager changes the job category or specialized field, the system resets the selected skills and updates the list accordingly. \\
+    & 3. The HR Manager can cancel the process at any time, with the current selections not being saved for future sessions. \\
     \hline
 \end{xltabular}
 
@@ -151,8 +151,8 @@ After the HR Manager has selected a job category (and a specialized field, if ap
 In this use case, the HR Manager selects the tasks related to the chosen skills. The system fetches and displays the tasks associated with the selected skills from the database. The HR Manager can search and filter through these tasks using Algolia's search engine capabilities.
 
 
-\newpage
-\begin{xltabular}{1.2\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=1.5\hsize}X|}
+
+\begin{xltabular}{1.2\textwidth}{|>{\hsize=0.4\hsize}X|>{\hsize=1.6\hsize}X|}
     \caption{Use Case 3: Fetch and Select Tasks for Chosen Skills} \\
     \hline
     \textbf{Title} & Fetch and Select Tasks for Chosen Skills \\
@@ -181,7 +181,7 @@ In this use case, the HR Manager selects the tasks related to the chosen skills.
 \subsubsection{\underline{Use Case 4: Generate Job Description}}
 Finally, the HR Manager generates the job description using the selected skills and tasks. The system uses the GPT-3 API to generate a comprehensive job description based on the selected skills and tasks. The HR Manager can view the generated job description, and if necessary, delete or update it.
 
-
+\newpage
 \begin{xltabular}{1.2\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=1.5\hsize}X|}
     \caption{Use Case 4: Generate Job Description} \\
     \hline
@@ -202,7 +202,7 @@ Finally, the HR Manager generates the job description using the selected skills 
     \hline
     \textbf{Postconditions} & The job description is generated, saved in the database, and available for the HR Manager's use. \\
     \hline
-    \textbf{Alternative Scenarios} & HR Manager chooses not to generate job description: The HR Manager may decide not to generate the job description after reviewing the information. In this case, the system should store the information provided till this point and allow the HR Manager to resume from the same point at a later time. \\
+    \textbf{Alternative Scenarios} & If the HR Manager opts not to generate a job description, the system retains the provided information, allowing the HR Manager to resume from the same point later. \\
     \hline
 \end{xltabular}
 
@@ -210,13 +210,14 @@ Finally, the HR Manager generates the job description using the selected skills 
 \section{Design} 
 In this sub-section, we will present the different detailed Activity Diagrams + Sequence diagrams for the first sprint.
 
+\newpage
 \subsection{Detailed Activity Diagrams}
 \subsubsection{Use Case 1: Select Job Category and Specialized Field} 
 
-\newpage
+
 \begin{figure}[H]
     \centering
-    \makebox[\textwidth]{\includegraphics[width=0.9\linewidth]{src/assets/images/sprint2UseCase1.png}}
+    \makebox[\textwidth]{\includegraphics[width=0.8\linewidth]{src/assets/images/sprint2UseCase1.png}}
     \caption{ Activity Diagram for the Select Job Category and Specialized Field Use-Case }
     \label{fig:UseCase1Sprint2_Activity_Diagram}
 \end{figure}
@@ -279,7 +280,7 @@ The final stage in this process occurs when the user selects the 'next' option. 
 \subsubsection{Use Case 4: Generate Job Description} 
 \begin{figure}[H]
     \centering
-    \makebox[1.2\textwidth]{\includegraphics[width=\linewidth]{src/assets/images/sprint2UseCase4.png}}
+    \makebox[1.2\textwidth]{\includegraphics[width=1.4\linewidth]{src/assets/images/sprint2UseCase4.png}}
     \caption{ Activity Diagram for the Generate Job Description Use-Case }
     \label{fig:UseCase4Sprint2_Activity_Diagram}
 \end{figure}

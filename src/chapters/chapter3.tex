@@ -29,7 +29,7 @@ The first sprint was centered on system access and user profile management. Key 
         \hline
         As an HR Manager, I want to login into the system so that I can access the features                                 & 2.1 Design and implement the login process                                                              & Develop a login page and backend functionality to authenticate the user's credentials and grant access                                   & 2 days                  \\
         \hline
-        As an HR Manager, I want to be able to update my profile information in the account settings and delete the account & 3.1 Develop a feature that allows HR Managers to update their profile information or delete the account & Implement functionality in the user's account settings to allow them to update their profile details or delete their account             & 3 days                  \\
+        As an HR Manager, I want to be able to update my profile information in the account settings                        & 3.1 Develop a feature that allows HR Managers to update their profile information                       & Implement functionality in the user's account settings to allow them to update their profile details                                     & 3 days                  \\
         \hline
                                                                                                                             & 3.2 Integrate this feature into the system                                                              & Include this functionality in the overall system, ensure it interacts correctly with other system features and data                      & 2 days                  \\
         \hline
@@ -114,12 +114,12 @@ Once an HR Manager has created a profile, they will need to log in to access the
 \end{table}
 
 
-\subsubsection{\underline{Use Case 3 : Update Profile or Delete Account }}
-At any point, the HR Manager might need to update their profile information or even delete their account entirely. In this use case, the HR Manager, who is already logged in to the system, navigates to the account settings page. To update their profile, they need to edit the necessary information fields and save the changes. The system will confirm the update once it's successful. On the other hand, to delete their account, they need to click on the "delete account" button and confirm the decision. The system will then delete the account.
+\subsubsection{\underline{Use Case 3 : Update Profile }}
+At any point, the HR Manager might need to update their profile information. In this use case, the HR Manager, who is already logged in to the system, navigates to the account settings page. To update their profile, they need to edit the necessary information fields and save the changes. The system will confirm the update once it's successful.
 
 \begin{table}[H]
     \renewcommand{\arraystretch}{1.5}%
-    \caption{Use Case: Update Profile or Delete Account}
+    \caption{Use Case: Update Profile }
     \centering
     \medskip
     \begin{tabularx}{\textwidth} {
@@ -130,14 +130,12 @@ At any point, the HR Manager might need to update their profile information or e
         \hline
         \textbf{Preconditions} & The HR Manager is already logged into the system. \\
         \hline
-        \textbf{Postconditions} & The HR Manager has successfully updated their profile or deleted their account. \\
+        \textbf{Postconditions} & The HR Manager has successfully updated their profile. \\
         \hline
         \textbf{Main Success Scenario} & 1. The HR Manager navigates to the account settings page. \\
         & 2. To update the profile, the HR Manager edits the necessary information and saves the changes. The system confirms the update. \\
-        & 3. To delete the account, the HR Manager clicks the "delete account" button, confirms the decision, and the system deletes the account. \\
         \hline
         \textbf{Alternative Scenarios} & - The HR Manager attempts to save invalid information (e.g., an improperly formatted email address). The system displays an error message, and the HR Manager needs to correct the information. \\
-        & - The HR Manager requests to delete the account but then cancels the request. The system cancels the deletion process. \\
         \hline
     \end{tabularx}
 \end{table}
@@ -171,7 +169,7 @@ The activity diagram shows the sequence of steps a new HR Manager would take to 
 
 \begin{figure}[H]
     \centering
-    \makebox[\textwidth]{\includegraphics[width=\linewidth]{src/assets/images/sprint1UseCase2ActivityDiagram.PNG}}
+    \makebox[\textwidth]{\includegraphics[width=0.9\linewidth]{src/assets/images/sprint1UseCase2ActivityDiagram.PNG}}
     \caption{ Activity Diagram for the Log into the System Use-Case }
     \label{fig:UseCase2_Activity_Diagram}
 \end{figure}
@@ -190,7 +188,15 @@ This diagram shows the actions that an HR Manager would take to log into the sys
 \end{figure}
 
 \subsection*{Description}
-The activity diagram illustrates the sequence of actions for updating a profile. The HR Manager logs into the system, navigates to profile settings, makes the desired changes, and submits them. The system then validates the changes. If the validation is successful, the profile is updated and a confirmation message is shown. If unsuccessful, an error message is displayed.
+% The activity diagram illustrates the sequence of actions for updating a profile. The HR Manager logs into the system, navigates to profile settings, makes the desired changes, and submits them. The system then validates the changes. If the validation is successful, the profile is updated and a confirmation message is shown. If unsuccessful, an error message is displayed.
+
+The activity diagram provides a detailed view of the process for updating a profile. The HR Manager, once logged into the system, navigates to the account settings page. Here, they have the option to modify various aspects of their profile, such as personal details, company information, or account preferences. After making the desired changes, they submit them for validation by the system.
+
+The system then checks the submitted changes for any inconsistencies or errors. If the validation is successful, the system proceeds to update the profile with the new information and displays a confirmation message to the HR Manager. This confirmation serves as an assurance that the changes have been successfully implemented.
+
+However, if the validation fails, the system displays an error message. This message informs the HR Manager of the issue with the submitted changes, such as incorrect formatting or invalid data. The HR Manager is then prompted to correct the information and resubmit the changes.
+
+This process ensures that the HR Manager has full control over their profile information and can make necessary adjustments as needed. It also maintains the integrity of the user data within the system by ensuring that all changes meet the required standards.
 
 \subsection{Detailed Sequence Diagrams}
 Sequence diagrams provide a detailed visual representation of interactions among different entities in the system, outlining how processes operate with one another and in what order. They are essentially a graphical depiction of an exchange of information between entities over time. In the context of our system, sequence diagrams allow us to trace the sequence of events and operations that take place during the execution of a use case.
@@ -304,9 +310,9 @@ The backend functionality was then developed to authenticate the user's credenti
 
 \subsection{Profile Management}
 
-The final step was to develop a feature that allows users to update their profile information or delete their account. This involved creating an account settings page where users could view and edit their profile details.
+The final step was to develop a feature that allows users to update their profile information. This involved creating an account settings page where users could view and edit their profile details.
 
-The backend functionality was then developed to handle these updates and deletions. This involved writing server-side code to update or delete the user's data in the database based on their input.
+The backend functionality was then developed to handle these updates and deletions. This involved writing server-side code to update the user's data in the database based on their input.
 
 
 \begin{figure}[H]
@@ -317,12 +323,9 @@ The backend functionality was then developed to handle these updates and deletio
 \end{figure}
 
 
-\subsection{Integration}
+\subsection{Integration and Testing}
 
 Once all these features were developed, they were integrated into the overall system. This involved ensuring that they interacted correctly with other system features and data, and that they provided a smooth and intuitive user experience.
-
-\subsection{Testing}
-
 Finally, thorough testing was conducted to ensure that all the features worked as expected. This involved testing each feature individually and as part of the overall system, and fixing any bugs or issues that were identified.
 
 

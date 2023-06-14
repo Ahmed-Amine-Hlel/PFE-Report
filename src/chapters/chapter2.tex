@@ -172,17 +172,27 @@ The functional requirements of our project are directly tied to the needs and ex
 \end{enumerate}
 
 %  ----------------------- Non-Functional Requirements ----------------------- %
+% \subsection{Non-Functional Requirements Analysis}
+% Non-functional requirements define the system's properties or characteristics, such as performance, security, and usability. They play a crucial role in the system's operation, as they outline the system's behavior. The following are the non-functional requirements for our web application :
+
+% \begin{enumerate}
+%     \item Usability: The system should be user-friendly and intuitive to ensure that all types of users, irrespective of their technical proficiency, can efficiently utilize the application. It should also include a comprehensive help system and user guide.
+%     \item Performance: The system should be highly responsive and capable of handling multiple simultaneous users without any degradation in performance. It should also be scalable to accommodate an increasing number of users and data over time.
+%     \item Compatibility: The system should be compatible with various devices, platforms, and browsers to maximize accessibility. It should adhere to responsive design principles for optimal display on different screen sizes and resolutions.
+%     \item Maintainability: The system should be designed in a modular manner, allowing for easy updates, modifications, and debugging. It should also provide tools for tracking and resolving any issues that may arise.
+%     \item Interoperability: The system should seamlessly integrate with the \glsxtrshort{icd} toolset and the Airtable database. It should also provide APIs or other means for possible future integrations with other systems.
+% \end{enumerate}
+
 \subsection{Non-Functional Requirements Analysis}
-Non-functional requirements define the system's properties or characteristics, such as performance, security, and usability. They play a crucial role in the system's operation, as they outline the system's behavior. The following are the non-functional requirements for our web application :
+Non-functional requirements, such as performance, security, and usability, shape the system's behavior. Here are the non-functional requirements for our web application:
 
 \begin{enumerate}
-    \item Usability: The system should be user-friendly and intuitive to ensure that all types of users, irrespective of their technical proficiency, can efficiently utilize the application. It should also include a comprehensive help system and user guide.
-    \item Performance: The system should be highly responsive and capable of handling multiple simultaneous users without any degradation in performance. It should also be scalable to accommodate an increasing number of users and data over time.
-    \item Compatibility: The system should be compatible with various devices, platforms, and browsers to maximize accessibility. It should adhere to responsive design principles for optimal display on different screen sizes and resolutions.
-    \item Maintainability: The system should be designed in a modular manner, allowing for easy updates, modifications, and debugging. It should also provide tools for tracking and resolving any issues that may arise.
-    \item Interoperability: The system should seamlessly integrate with the \glsxtrshort{icd} toolset and the Airtable database. It should also provide APIs or other means for possible future integrations with other systems.
+\item Usability: The system should be user-friendly and intuitive, catering to users of all technical levels. It should also have a thorough help system and user guide.
+\item Performance: The system should be responsive and capable of managing multiple users simultaneously without performance loss. It should also scale to support an increasing user base and data.
+\item Compatibility: The system should work with various devices, platforms, and browsers, adhering to responsive design principles for optimal display on different screens.
+% \item Maintainability: The system should be modular for easy updates, modifications, and debugging. It should also have tools for issue tracking and resolution.
+\item Interoperability: The system should integrate with the \glsxtrshort{icd} toolset and the Airtable database, providing APIs for potential future system integrations.
 \end{enumerate}
-
 
 
 % ----------------------- Comparative Analysis ----------------------- %
@@ -234,6 +244,7 @@ In this sub-section, we present the actors involved in the different phases of o
     \end{tabularx}
 \end{table}
 
+
 \subsection{General Product Backlog}
 The Backlog is a crucial artifact in Scrum, encompassing the functional or technical characteristics that make up the desired product. In the subsequent sections, we present a general backlog for our product, followed by a more detailed backlog for the HR Manager persona, the main focus of our work so far.
 
@@ -254,7 +265,7 @@ The Backlog is a crucial artifact in Scrum, encompassing the functional or techn
         \hline
         System Access/Account Management                      & HR Manager        & As an HR Manager, I want to sign up, create my profile, and login to access the system                                         & High               \\
         \hline
-        User Profile Management/Profile Update                & HR Manager        & As an HR Manager, I want to update my profile information and delete the account if necessary                                  & High               \\
+        User Profile Management/Profile Update                & HR Manager        & As an HR Manager, I want to update my profile information                                                                      & High               \\
         \hline
         Job Description Definition/Job Selection              & HR Manager        & As an HR Manager, I want to select a job description and the associated specialized field to define roles and responsibilities & High               \\
         \hline
@@ -292,9 +303,9 @@ In the context of this project and given the timeline constraints, we specifical
                     \begin{itemize}
                         \item Subtask 2.1: Design and implement the login process
                     \end{itemize}
-              \item User Story 3: As an HR Manager, I want to be able to update my profile information in the account settings and delete the account. \\
+              \item User Story 3: As an HR Manager, I want to be able to update my profile information in the account settings. \\
                     \begin{itemize}
-                        \item Subtask 3.1: Develop a feature that allows HR Managers to update their profile information or delete the account.
+                        \item Subtask 3.1: Develop a feature that allows HR Managers to update their profile information.
                         \item Subtask 3.2: Integrate this feature into the system.
                     \end{itemize}
           \end{itemize}
@@ -343,10 +354,10 @@ In the context of this project and given the timeline constraints, we specifical
               \item User Story 3: As an HR Manager, I want to interact with a chatbot to understand the system better and get guidance on the process. \\
                     \begin{itemize}
                         \item Subtask 3.1: Develop a chatbot using GPT-3
-                        \item Subtask 3.2: Integrate the chatbot into the system 
+                        \item Subtask 3.2: Integrate the chatbot into the system
                     \end{itemize}
           \end{itemize}
-\end{enumerate} 
+\end{enumerate}
 
 \vspace{2cm}
 
@@ -431,7 +442,7 @@ In this section, we will present the interface mockups for our project. These mo
 
 \newpage
 \section{Working Environment}
-This part is reserved for the presentation of all of the hardware and software used in the realization of the project and includes but is not limited to; programming languages, frameworks, technologies, etc...
+This section is designated for the presentation of all hardware and software elements employed in the project. It encompasses every computing and technological resource integral to the project's realization. These range from the underlying hardware facilitating computational tasks, to the software counterparts including programming languages, frameworks, and a spectrum of technologies. Together, these components contribute to a comprehensive ecosystem that brings the project to fruition. This exposition is crucial for understanding the project's technical makeup and potential avenues for future enhancements or modifications.
 \subsection{Hardware Environment}
 The hardware environment for the development and testing of the application consists of two main systems with the following specifications:
 
@@ -454,41 +465,62 @@ The hardware environment for the development and testing of the application cons
           \end{itemize}
 \end{enumerate}
 
+\newpage
 \subsection{Software Environment}
 The software environment used for the development of the application includes a combination of code editing, API testing, and design tools:
 
 \begin{itemize}
     \renewcommand\labelitemi{-}
-    \item Code Editing: Visual Studio Code is used as the primary code editor for writing and debugging the code for the back-end.
-    \item API Testing: Postman and Amnesia are used for testing APIs and checking database interactions.
-    \item Design: Figma is used for designing the user interface and user experience of the application.
+    \item Code Editing: Visual Studio Code is used as the primary code editor for writing and debugging the code for the back-end. \\
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=5cm]{src/assets/logos/Visual_Studio_Code_1.35_icon.svg.png}
+              \caption{  Logo Of Visual Studio Code }
+              \label{fig:Vscode_Logo}
+          \end{figure}
+          
+    \item API Testing: Postman and Insomnia \cite{insomnia} are used for testing APIs and checking database interactions. \\
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=5cm]{src/assets/logos/insomnia.jpg}
+              \caption{  Logo Of Insomnia API Development Tool }
+              \label{fig:Insomnia_Logo}
+          \end{figure}
+    \newpage      
+    \item Design: For the creation of various diagrams and graphs, {\color{purple}Figma} \cite{figma} was extensively utilized. Figma is a cloud-based design tool that allows for collaborative work among team members.ke it an excellent tool for creating intricate diagrams and graphs.\\
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=3cm]{src/assets/logos/1024px-Figma-logo.svg.png}
+              \caption{  Logo Of Figma }
+              \label{fig: Figma_Logo}
+          \end{figure}
 \end{itemize}
 
 \subsection{ Application Program Interface (API) Choice}
 The application interacts with several APIs for data handling and advanced functionality:
 \begin{itemize}
     \renewcommand\labelitemi{-}
-    \item Render APIs: These are used to interact with the back-end services hosted on the Render cloud application hosting platform.
-    \item Algolia APIs: These are used to create an index of all skill items in the \glsxtrshort{icd} toolset and provide search capabilities in the application.
+    \item Render APIs: These are used as an interface to interact with services on the Render platform, a cloud hosting service. They manage and orchestrate crucial cloud resources, allowing our project to leverage cloud computing for effective back-end operations.
+    \item Algolia APIs: Algolia is a fast and flexible search and discovery solution, making it easy for users to find relevant information. In this project, Algolia APIs are utilized to create an index of all skill items in the \glsxtrshort{icd} toolset. This index effectively serves as a reference database for all the skills in the toolset. Algolia's search capabilities are then leveraged to provide real-time, typo-tolerant search within the application. This allows users to quickly and accurately find relevant skills from the vast array of options in the ICD toolset.
     \item GPT-3.5 Turbo API: This API from OpenAI is used to generate job descriptions based on the selected skills and tasks.
 \end{itemize}
 
 \subsection{Front-End Technology Choice}
-The team chose {\color{purple} FlutterFlow} as the front-end development platform for the application. FlutterFlow is a revolutionary low-code platform that allows developers to design, build and prototype applications rapidly. It provides a visually intuitive interface that enables the building and testing of the UI in real-time. This significantly reduces the time and effort required for UI development and allows the team to focus more on the functionality and user experience of the application.
+The team chose {\color{purple} FlutterFlow} \cite{flutterflow} as the front-end development platform for the application. FlutterFlow is a revolutionary low-code platform that allows developers to design, build and prototype applications rapidly. It provides a visually intuitive interface that enables the building and testing of the UI in real-time. This significantly reduces the time and effort required for UI development and allows the team to focus more on the functionality and user experience of the application.
 
 \begin{figure}[H]
     \centering
-    \makebox[\textwidth]{\includegraphics[width=\linewidth]{src/assets/logos/flutterflowLogo.png}}
+    \includegraphics[width=10cm]{src/assets/logos/flutterflowLogo.png}
     \caption{  Logo Of FlutterFlow }
     \label{fig:FlutterFlow_Logo}
 \end{figure}
 
 % \newpage
-FlutterFlow also supports custom code in {\color{purple} Dart}, which is a client-optimized language for fast apps on any platform. Dart was used extensively in this project to implement custom widgets, functions, and actions to meet the specific needs of the application. The language's robust library and powerful features facilitated the development of interactive features in the application, such as dropdowns for job descriptions, the Algolia search function for skill selection, and the chatbot for user assistance.
+FlutterFlow also supports custom code in {\color{purple} Dart} \cite{dart}, which is a client-optimized language for fast apps on any platform. Dart was used extensively in this project to implement custom widgets, functions, and actions to meet the specific needs of the application. The language's robust library and powerful features facilitated the development of interactive features in the application, such as dropdowns for job descriptions, the Algolia search function for skill selection, and the chatbot for user assistance.
 
 \begin{figure}[H]
     \centering
-    \makebox[\textwidth]{\includegraphics[width=0.8\linewidth]{src/assets/logos/dartLogo.png}}
+    \includegraphics[width=10cm]{src/assets/logos/dartLogo.png}
     \caption{  Logo Of Dart }
     \label{fig: Dart_Logo}
 \end{figure}
@@ -498,7 +530,7 @@ The back-end of the application was developed using {\color{purple}JavaScript} w
 
 \begin{figure}[H]
     \centering
-    \makebox[\textwidth]{\includegraphics[width=0.5\linewidth]{src/assets/logos/js Logo.png}}
+    \includegraphics[width=5cm]{src/assets/logos/js Logo.png}
     \caption{  Logo Of JavaScript }
     \label{fig: JS_Logo}
 \end{figure}
@@ -507,21 +539,22 @@ Express.js is a fast, unopinionated, and minimalist web framework for Node.js. I
 
 \begin{figure}[H]
     \centering
-    \makebox[\textwidth]{\includegraphics[width=0.8\linewidth]{src/assets/logos/expressJsLogo.png}}
+    \includegraphics[width=10cm]{src/assets/logos/expressJsLogo.png}
     \caption{  Logo Of ExpressJs }
     \label{fig: ExpressJS_Logo}
 \end{figure}
 
-For database management, we used  {\color{purple}Airtable} and  {\color{purple}Firebase}. Airtable is a cloud-based software company that blends a traditional spreadsheet with a database. It offers a variety of views to work with data, including grid, calendar, kanban, gallery, and form. 
+\newpage
+For database management, we used  {\color{purple}Airtable} \cite{airtable} and  {\color{purple}Firebase}.Airtable is a cloud-based software company that blends a traditional spreadsheet with a database. It offers a variety of views to work with data, including grid, calendar, kanban, gallery, and form. 
 
 \begin{figure}[H]
     \centering
-    \makebox[\textwidth]{\includegraphics[width=0.8\linewidth]{src/assets/logos/airtableLogo.png}}
+    \includegraphics[width=10cm]{src/assets/logos/airtableLogo.png}
     \caption{  Logo Of Airtable }
     \label{fig: Airtable_Logo}
 \end{figure}
 
-\newpage
+
 Firebase Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud. It keeps data in sync across client apps through real-time listeners and offers offline support for mobile and web, making it an excellent choice for handling user information and authentication.
 
 \vspace{2cm}
@@ -533,7 +566,8 @@ Firebase Firestore is a flexible, scalable database for mobile, web, and server 
     \label{fig: Firebase_Logo}
 \end{figure}
 
-We used {\color{purple}Render}, a unified platform to build and run all applications and websites, for hosting the web services. Render makes it easier to manage and scale apps with fully managed PostgreSQL, Redis, cron jobs, background workers, and more, all on a unified platform.
+\newpage
+We used {\color{purple}Render} \cite{render}, a unified platform to build and run all applications and websites, for hosting the web services. Render makes it easier to manage and scale apps with fully managed PostgreSQL, Redis, cron jobs, background workers, and more, all on a unified platform.
 
 \begin{figure}[H]
     \centering
@@ -543,8 +577,8 @@ We used {\color{purple}Render}, a unified platform to build and run all applicat
 \end{figure}
 
 
-\newpage
-{\color{purple}Algolia} was used to enhance the application's search capabilities. Algolia is a powerful and flexible search and discovery API that delivers real-time results from the first keystroke. Its powerful features enabled the application to handle the extensive data from the \glsxtrshort{icd} toolset and provide a user-friendly experience.
+
+{\color{purple}Algolia} \cite{algolia} was used to enhance the application's search capabilities. Algolia is a powerful and flexible search and discovery API that delivers real-time results from the first keystroke. Its powerful features enabled the application to handle the extensive data from the \glsxtrshort{icd} toolset and provide a user-friendly experience.
 
 \begin{figure}[H]
     \centering
@@ -553,8 +587,8 @@ We used {\color{purple}Render}, a unified platform to build and run all applicat
     \label{fig: Algolia_Logo}
 \end{figure}
 
-
-For the automated generation of job descriptions and for the interactive chatbot feature, the team utilized the {\color{purple}GPT-3.5 Turbo API} from OpenAI. The GPT API provides a general-purpose "text in, text out" interface, making it easy to apply the capabilities of the models to a wide range of tasks. The use of system context related to the \glsxtrshort{icd} toolset ensured that the chatbot provided related and helpful information to the users.
+\newpage
+For the automated generation of job descriptions and for the interactive chatbot feature, the team utilized the {\color{purple}GPT-3.5 Turbo API} from OpenAI\cite{openai}. The GPT API provides a general-purpose "text in, text out" interface, making it easy to apply the capabilities of the models to a wide range of tasks. The use of system context related to the \glsxtrshort{icd} toolset ensured that the chatbot provided related and helpful information to the users.
 
 \begin{figure}[H]
     \centering
@@ -563,9 +597,29 @@ For the automated generation of job descriptions and for the interactive chatbot
     \label{fig: OpenAI_Logo}
 \end{figure}
 
+
+% \newpage
+% \subsection{Diagrams and Graphs Generation}
+% For the creation of various diagrams and graphs, {\color{purple}Figma} \cite{figma} was extensively utilized. Figma is a cloud-based design tool that allows for collaborative work among team members. It offers a wide range of features that make it an excellent tool for creating intricate diagrams and graphs. These visuals were crucial in representing complex data and workflows in a more understandable and accessible manner.
+% \begin{figure}[H]
+%     \centering
+%     \makebox[\textwidth]{\includegraphics[width=0.4\linewidth]{src/assets/logos/1024px-Figma-logo.svg.png}}
+%     \caption{  Logo Of Figma }
+%     \label{fig: Figma_Logo}
+% \end{figure}
+
+\subsection{Report Building}
+The report was compiled and formatted using {\color{purple}LaTeX} \cite{latex}, a high-quality typesetting system. LaTeX is particularly well-suited for technical and scientific documents. It provides a multitude of features that allow for precise control over the document structure and content presentation. The use of LaTeX ensured that the report maintained a professional and consistent format throughout, enhancing its readability and overall presentation.
+\begin{figure}[H]
+    \centering
+    \makebox[\textwidth]{\includegraphics[width=0.4\linewidth]{src/assets/logos/LaTeX_logo.svg.png}}
+    \caption{  Logo Of Latex }
+    \label{fig: Latex_Logo}
+\end{figure}
+
 With these technologies combined, We were able to build an efficient and user-friendly application that simplifies the use of the \glsxtrshort{icd} toolset.
 
-
+\newpage
 \section{Proposed architecture}
 \subsection{General Presentation of the Proposed Solution}
 
@@ -607,7 +661,7 @@ The application's architecture is designed with a focus on simplifying the inter
 % The primary aim of the project was to design and implement a system that enables {\color{newBlue}\textbf{HR}} managers to effectively define job roles and responsibilities using the IT Competency Dictionary (iCD). 
 % The iCD, a comprehensive toolset developed in Japan, consists of a {\color{darkPurple}\textbf{Task Dictionary}} outlining specific IT business tasks and a {\color{darkgreen}\textbf{Skill Dictionary}} detailing the necessary IT skills required to perform these tasks. 
 % This toolset, originally provided in Excel format, contains essential elements from three previous skill standards in Japan, making it a comprehensive resource for defining IT job roles and responsibilities.
-The project's primary goal was to create a system that allows {\color{newBlue}\textbf{HR}} managers to effectively define job roles using the \glsxtrfull{icd}. The \glsxtrshort{icd}, a comprehensive toolset from Japan, includes a {\color{darkPurple}\textbf{Task Dictionary}} and a {\color{darkgreen}\textbf{Skill Dictionary}}. Originally in Excel format, the \glsxtrshort{icd} integrates elements from three previous Japanese skill standards, making it a valuable resource for defining IT roles.
+The project's primary goal was to create a system that allows {\color{newBlue}\textbf{HR managers}} to effectively define job roles using the \glsxtrfull{icd}. The \glsxtrshort{icd}, a comprehensive toolset from Japan, includes a {\color{darkPurple}\textbf{Task Dictionary}} and a {\color{darkPurple}\textbf{Skill Dictionary}}. Originally in Excel format, the \glsxtrshort{icd} integrates elements from three previous Japanese skill standards, making it a valuable resource for defining IT roles.
 
 
 \begin{itemize}
@@ -679,17 +733,31 @@ They served as useful references during the data import and manipulation phase, 
     \label{fig: Project-Management-Canva}
 \end{figure}
 
-\newpage
-\subsection*{Mindmap for the 'Application Specialist' Job Category}
+% \newpage
+% \subsection*{Mindmap for the 'Application Specialist' Job Category}
+% \begin{figure}[!b]
+%     \centering
+%     \caption{Visual Representation of Key Aspects and Skills for the 'Application Specialist' Job Category}
+%     \label{fig:Application_Specialist_Job_Mindmap}
+% \end{figure}
 
-\newpage
-\subsection{Data Manipulation Flow}
-\begin{figure}[H]
+\begin{landscape}
+ \subsection*{Mindmap for the 'Application Specialist' Job Category}
+\begin{figure}[!b]
     \centering
-    \makebox[\textwidth]{\includegraphics[width=\linewidth]{src/assets/images/Data-Manipulation.jpg}}
-    \caption{ Data Manipulation Flow Graph }
-    \label{fig: Data_Manipulation_Flow_Graph}
+    \caption{Visual Representation of Key Aspects and Skills for the 'Application Specialist' Job Category}
+    \label{fig:Application_Specialist_Job_Mindmap}
 \end{figure}
+\end{landscape}
+
+% \newpage
+% \subsection{Data Manipulation Flow}
+% \begin{figure}[H]
+%     \centering
+%     \makebox[\textwidth]{\includegraphics[width=\linewidth]{src/assets/images/Data-Manipulation.jpg}}
+%     \caption{ Data Manipulation Flow Graph }
+%     \label{fig: Data_Manipulation_Flow_Graph}
+% \end{figure}
 
 
 
